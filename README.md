@@ -1,3 +1,11 @@
+Dernier commit: 23/11/2025 | Langage principal: JavaScript | Nombre de langages: 3
+
+Construit avec les outils et technologies : 
+JavaScript, CSS, HTML
+
+🇫🇷 Français | 🇬🇧 Anglais | 🇪🇸 Espagnol | 🇮🇹 Italien | 🇵🇹 Portugais | 🇷🇺 Russe | 🇩🇪 Allemand | 🇹🇷 Turc
+
+
 # 🧮 Calculatrice Scientifique JavaScript
 
 Une calculatrice scientifique moderne et élégante développée en JavaScript vanilla avec interface responsive et historique des calculs.
