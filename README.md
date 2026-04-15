@@ -270,3 +270,9 @@ Ce projet est open source. Libre d'utilisation pour des projets personnels ou é
 ---
 
 ⭐ **Si vous aimez ce projet, n'oubliez pas de lui donner une étoile sur GitHub !** ⭐
+
+---
+
+<p align="center">
+  <sub>Par <a href="https://adam.beloucif.com">Adam Beloucif</a> · Data Engineer & Fullstack Developer · <a href="https://github.com/Adam-Blf">GitHub</a></sub>
+</p>
