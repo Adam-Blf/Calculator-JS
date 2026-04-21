@@ -24,6 +24,12 @@ Scientific calculator with history, advanced functions (√, x², π), and keybo
 
 # 🧮 Calculatrice Scientifique JavaScript
 
+![Status](https://img.shields.io/badge/status-complete-brightgreen)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![Vercel](https://img.shields.io/badge/deploy-Vercel-000?logo=vercel&logoColor=white)
+
 Une calculatrice scientifique moderne et élégante développée en JavaScript vanilla avec interface responsive et historique des calculs.
 
 ## 🌟 Fonctionnalités
