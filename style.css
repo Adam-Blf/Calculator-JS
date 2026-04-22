@@ -1,7 +1,6 @@
 /* =====================================================
-   DARK NEUMORPHISM CALCULATOR
+   BRUTALIST CALCULATOR
    ===================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
 * {
     margin: 0;
@@ -10,18 +9,20 @@
 }
 
 :root {
-    --bg-color: #212529;
-    --text-color: #f8f9fa;
-    --text-secondary: #adb5bd;
+    --bg-color: #f5f0e8;
+    --panel-color: #ffffff;
+    --text-color: #0a0a0a;
+    --text-secondary: #555;
     --shadow-light: rgba(255, 255, 255, 0.05);
     --shadow-dark: rgba(0, 0, 0, 0.5);
-    --primary-accent: #00d2ff; /* Cyan */
-    --secondary-accent: #3a7bd5; /* Blue */
-    --operator-color: #ff0055; /* Pink/Red */
+    --primary-accent: #0a0a0a;
+    --secondary-accent: #0a0a0a;
+    --operator-color: #d4000a;
+    --border: 3px solid #0a0a0a;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Archivo Black', sans-serif;
     background-color: var(--bg-color);
     min-height: 100vh;
     display: flex;
@@ -41,44 +42,47 @@ body {
 }
 
 .calculator {
-    width: 350px;
-    padding: 25px;
-    border-radius: 30px;
-    background-color: var(--bg-color);
-    box-shadow: 15px 15px 30px var(--shadow-dark), 
-                -15px -15px 30px var(--shadow-light);
+    width: 360px;
+    padding: 0;
+    border-radius: 0;
+    background-color: var(--panel-color);
+    border: var(--border);
+    box-shadow: 8px 8px 0 #0a0a0a;
 }
 
 /* =====================================================
    Display
    ===================================================== */
 .display-container {
-    margin-bottom: 25px;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: var(--bg-color);
-    box-shadow: inset 8px 8px 16px var(--shadow-dark), 
-                inset -8px -8px 16px var(--shadow-light);
+    margin-bottom: 0;
+    padding: 20px 18px;
+    border-radius: 0;
+    background-color: #0a0a0a;
+    box-shadow: none;
+    border-bottom: var(--border);
     text-align: right;
-    min-height: 100px;
+    min-height: 110px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
 .previous-operand {
-    font-size: 1rem;
-    color: var(--text-secondary);
+    font-size: 0.9rem;
+    color: #888;
     min-height: 1.5rem;
     margin-bottom: 5px;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .current-operand {
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: var(--text-color);
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: #ffffff;
     word-wrap: break-word;
     word-break: break-all;
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: -0.02em;
 }
 
 /* =====================================================
@@ -87,85 +91,98 @@ body {
 .buttons-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    gap: 0;
+    padding: 0;
 }
 
 button {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
+    height: 72px;
+    width: 100%;
+    border-radius: 0;
     border: none;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
     outline: none;
-    background-color: var(--bg-color);
-    box-shadow: 6px 6px 12px var(--shadow-dark), 
-                -6px -6px 12px var(--shadow-light);
+    background-color: #ffffff;
+    box-shadow: none;
     color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: background 0.08s;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 0;
 }
 
 button:active {
-    box-shadow: inset 4px 4px 8px var(--shadow-dark), 
-                inset -4px -4px 8px var(--shadow-light);
-    transform: scale(0.98);
+    background-color: #0a0a0a;
+    color: #ffffff;
+    transform: none;
 }
 
 button:hover {
-    color: var(--primary-accent);
+    background-color: #f0ede6;
+    color: var(--text-color);
 }
 
 /* Special Buttons */
 .span-two {
     grid-column: span 2;
     width: 100%;
-    border-radius: 30px;
+    border-radius: 0;
 }
 
 .operator {
-    color: var(--primary-accent);
-    font-weight: 700;
+    color: var(--operator-color);
+    background-color: #fff8f0;
+}
+
+.operator:hover {
+    background-color: #ffe8d6;
 }
 
 .equals {
-    background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
-    color: white;
-    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3), 
-                -6px -6px 12px rgba(255, 255, 255, 0.05);
+    background-color: #0a0a0a;
+    color: #ffffff;
+    box-shadow: none;
 }
 
 .equals:hover {
+    background-color: #333;
     color: white;
-    filter: brightness(1.1);
 }
 
 .equals:active {
-    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: var(--operator-color);
+    box-shadow: none;
 }
 
 .clear, .delete {
     color: var(--operator-color);
+    background-color: #fff5f5;
+}
+
+.clear:hover, .delete:hover {
+    background-color: #ffe4e4;
 }
 
 /* =====================================================
-   History Panel (Optional)
+   History Panel
    ===================================================== */
 .history-panel {
     width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    background: var(--bg-color);
-    border-radius: 20px;
-    margin-top: 20px;
-    box-shadow: inset 6px 6px 12px var(--shadow-dark), 
-                inset -6px -6px 12px var(--shadow-light);
+    background: #f5f0e8;
+    border-radius: 0;
+    margin-top: 0;
+    border: var(--border);
+    border-top: none;
+    box-shadow: 8px 8px 0 #0a0a0a;
 }
 
 .history-panel.open {
@@ -187,7 +204,58 @@ button:hover {
     border-bottom: none;
 }
 
+/* Footer */
+.calculator-container footer {
+    margin-top: 1.5rem;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.75rem;
+    color: #888;
+    text-align: center;
+}
+
+.calculator-container footer a {
+    color: #0a0a0a;
+    text-decoration: none;
+    border-bottom: 1px solid #0a0a0a;
+}
+
+/* Actual HTML class mappings */
+.display {
+    margin-bottom: 0;
+    padding: 20px 18px;
+    background-color: #0a0a0a;
+    border-bottom: var(--border);
+    text-align: right;
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.display .history {
+    font-size: 0.9rem;
+    color: #888;
+    min-height: 1.5rem;
+    margin-bottom: 5px;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.display .current {
+    font-size: 2.8rem;
+    color: #ffffff;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: -0.02em;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: var(--bg-color); border-radius: 3px; box-shadow: inset 2px 2px 5px var(--shadow-dark); }
+::-webkit-scrollbar-thumb { background: #ccc; border-radius: 0; }
