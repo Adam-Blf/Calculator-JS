@@ -15,6 +15,25 @@
 
 Une calculatrice scientifique moderne et élégante développée en JavaScript vanilla avec interface responsive et historique des calculs.
 
+## Architecture
+
+```mermaid
+flowchart TB
+    HTML["index.html<br/>boutons · écran · panneau historique"]
+    Events["Gestionnaires d'événements<br/>clic boutons · clavier"]
+    Logic["Logique calcul<br/>appendNumber · chooseOperation · calculate"]
+    State["État applicatif<br/>currentValue · operation · history"]
+    Storage["localStorage<br/>50 derniers calculs"]
+    Style["style.css<br/>animations · responsive"]
+
+    HTML --> Events
+    Events --> Logic
+    Logic --> State
+    State --> Storage
+    State --> HTML
+    Style --> HTML
+```
+
 ## 🌟 Fonctionnalités
 
 ### Opérations de Base
