@@ -284,3 +284,14 @@ Ce projet est open source. Libre d'utilisation pour des projets personnels ou é
 <p align="center">
   <sub>Par <a href="https://adam.beloucif.com">Adam Beloucif</a> · Data Engineer & Fullstack Developer · <a href="https://github.com/Adam-Blf">GitHub</a> · <a href="https://www.linkedin.com/in/adambeloucif/">LinkedIn</a></sub>
 </p>
+
+
+## Star History
+
+<a href="https://www.star-history.com/?repos=Adam-Blf%2FCalculator-JS&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Adam-Blf/Calculator-JS&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Adam-Blf/Calculator-JS&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Adam-Blf/Calculator-JS&type=date&legend=top-left" />
+ </picture>
+</a>
