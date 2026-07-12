@@ -19,12 +19,12 @@ Une calculatrice scientifique moderne et élégante développée en JavaScript v
 
 ```mermaid
 flowchart TB
-    HTML["index.html<br/>boutons · écran · panneau historique"]
-    Events["Gestionnaires d'événements<br/>clic boutons · clavier"]
-    Logic["Logique calcul<br/>appendNumber · chooseOperation · calculate"]
-    State["État applicatif<br/>currentValue · operation · history"]
+    HTML["index.html<br/>boutons - écran - panneau historique"]
+    Events["Gestionnaires d'événements<br/>clic boutons - clavier"]
+    Logic["Logique calcul<br/>appendNumber - chooseOperation - calculate"]
+    State["État applicatif<br/>currentValue - operation - history"]
     Storage["localStorage<br/>50 derniers calculs"]
-    Style["style.css<br/>animations · responsive"]
+    Style["style.css<br/>animations - responsive"]
 
     HTML --> Events
     Events --> Logic
@@ -282,7 +282,7 @@ Ce projet est open source. Libre d'utilisation pour des projets personnels ou é
 ---
 
 <p align="center">
-  <sub>Par <a href="https://adam.beloucif.com">Adam Beloucif</a> · Data Engineer & Fullstack Developer · <a href="https://github.com/Adam-Blf">GitHub</a> · <a href="https://www.linkedin.com/in/adambeloucif/">LinkedIn</a></sub>
+  <sub>Par <a href="https://adam.beloucif.com">Adam Beloucif</a> - Data Engineer & Fullstack Developer - <a href="https://github.com/Adam-Blf">GitHub</a> - <a href="https://www.linkedin.com/in/adambeloucif/">LinkedIn</a></sub>
 </p>
 
 
