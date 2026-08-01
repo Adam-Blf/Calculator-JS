@@ -6,7 +6,6 @@
 [![commits](https://img.shields.io/github/commit-activity/t/Adam-Blf/Calculator-JS?color=001329&label=commits&style=flat-square)](https://github.com/Adam-Blf/Calculator-JS/commits) [![visites](https://hits.sh/github.com/Adam-Blf/Calculator-JS.svg?style=flat-square&label=visites&color=001329)](https://hits.sh/github.com/Adam-Blf/Calculator-JS/) [![last commit](https://img.shields.io/github/last-commit/Adam-Blf/Calculator-JS?color=D4A437&style=flat-square&label=dernier%20push)](https://github.com/Adam-Blf/Calculator-JS/commits) [![top language](https://img.shields.io/github/languages/top/Adam-Blf/Calculator-JS?style=flat-square)](https://github.com/Adam-Blf/Calculator-JS) [![license](https://img.shields.io/github/license/Adam-Blf/Calculator-JS?style=flat-square&color=D4A437)](LICENSE)
 <!-- adam-badges:end -->
 
-
 ![Status](https://img.shields.io/badge/status-complete-brightgreen)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
@@ -285,13 +284,6 @@ Ce projet est open source. Libre d'utilisation pour des projets personnels ou é
   <sub>Par <a href="https://adam.beloucif.com">Adam Beloucif</a> - Data Engineer & Fullstack Developer - <a href="https://github.com/Adam-Blf">GitHub</a> - <a href="https://www.linkedin.com/in/adambeloucif/">LinkedIn</a></sub>
 </p>
 
-
-## Star History
-
-<a href="https://www.star-history.com/?repos=Adam-Blf%2FCalculator-JS&type=date&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Adam-Blf/Calculator-JS&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Adam-Blf/Calculator-JS&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Adam-Blf/Calculator-JS&type=date&legend=top-left" />
  </picture>
 </a>
